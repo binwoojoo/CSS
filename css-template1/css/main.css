@@ -1,2 +1,144 @@
-@import url(../css/common\ .css)
+@import url(../css/common\ .css);
 
+/* header style */
+header {
+  background: rgba(0,0,0, 0.2);
+  height: 100px;
+  line-height: 100px;
+  /* z축 앞으로 튀어나감 */
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 3252;
+}
+header .inner-header {
+  /* border: 3px solid tomato; */
+  width: 84%;
+  margin: 0 auto;
+}
+
+header .inner-header .logo {
+  /* border: 3px solid violet; */
+  float: left;
+  width: 200px;
+}
+header .inner-header .logo img {
+  width: 100%;
+}
+
+
+header .inner-header .gnb {
+  /* border: 3px solid red; */
+  float: left;
+  margin-left: 80px;
+}
+header .inner-header .gnb li {
+  /* border: 3px dashed yellow; */
+  float: left;
+  margin-right: 80px;
+}
+
+header .inner-header .gnb li a {
+  /* background: red; */
+  display: block;
+  color: #fff;
+  font-size: 16px;
+}
+header .inner-header .gnb li a:hover {
+  color: #ff8342;
+}
+
+
+header .inner-header .tnb {
+  /* border: 3px solid blue; */
+  float: right;
+  color: #fff;
+  font-size: 16px;
+}
+header .inner-header .tnb li {
+  float: left;
+  margin-right: 25px;
+}
+header .inner-header .tnb li:first-child i,
+header .inner-header .tnb li:nth-child(2) i {
+  margin-right: 8px;
+  font-size: 18px;
+}
+
+header .inner-header .tnb li:last-child a {
+  border: 1px solid #fff;
+  padding: 5px 15px;
+  border-radius: 30px;
+}
+header .inner-header .tnb li:last-child a:hover {
+  background: #fff;
+  color: #ff8342;
+}
+
+header .inner-header .tnb li:last-child i {
+  margin-left: 5px;
+}
+
+header .inner-header .gnb-mobile {
+  display: none;
+}
+
+/* section main style */
+section.main {
+  background:no-repeat center/cover fixed;
+  height: 100vh;
+  background-image: url(../img/vis_4.jpg);
+  position: relative;
+}
+
+section.main .main-title {
+  /* background: red; */
+  color: white;
+  position: absolute;
+  text-align: center;
+  text-shadow: 2px 2px 10px #123;
+}
+
+.center {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+}
+
+section.main .main-title h2 {
+  font-size: 55px;
+}
+
+section.main .main-title p {
+  font-size: 25px;
+  margin: 20px 0;
+}
+
+section.main .main-title .view {
+  letter-spacing: 2px;
+  font-size: 15px;
+  width: 180px;
+  margin: 0 auto;
+  display: block;
+  border: 1px solid #fff;
+  border-radius: 40px;
+  padding: 8px 0;
+  position: relative;
+  overflow: hidden;
+}
+
+section.main .main-title .view::after {
+  content: '';
+  width: 0%;
+  height: 100%;
+  background: rgba(255, 255, 255, 0.4);
+  position: absolute;
+  left: 0;
+  top: 0;
+  transition: 0.4s;
+}
+
+section.main .main-title .view:hover::after {
+  width: 100%
+}
