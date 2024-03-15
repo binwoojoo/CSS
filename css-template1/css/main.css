@@ -410,22 +410,25 @@ section.innovation .inner .bottom a:hover {
 
 .sns .sub-container>li {
   border: 1px solid #000;
-  width: 33%;
+  width: 32%;
   float : left;
   margin-top: 80px;
+  margin-right: 2%;
+}
+
+.sns .sub-container li:last-child {
+  margin-right: 0;
 }
 
 
 
 .sns .sub-container .img-box {
   overflow: hidden;
-  height: 280px;
-  
+  height: 230px;
+  position: relative;
+  /* border: 5px solid #000; */
 }
+
 .sns .sub-container .img-box img {
   width: 100%;
 }
-
-/* .sns .sub-container .bottom {
-
-} */
