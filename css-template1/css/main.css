@@ -534,3 +534,8 @@ footer .inner .list li:last-child {
   color: rgb(0, 0, 0);
   font-weight: 700;
 }
+
+footer .inner .list li a:hover {
+  text-decoration: underline;
+  color: #ff8342  
+}
