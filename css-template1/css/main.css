@@ -409,7 +409,7 @@ section.innovation .inner .bottom a:hover {
 }
 
 .sns .sub-container>li {
-  border: 1px solid #000;
+  /* border: 1px solid #000; */
   width: 32%;
   float : left;
   margin-top: 80px;
@@ -431,4 +431,106 @@ section.innovation .inner .bottom a:hover {
 
 .sns .sub-container .img-box img {
   width: 100%;
+}
+
+section.sns ul li .img-box::before {
+  content: '';
+  width: 0;
+  height: 100%;
+  background: rgba(255, 131, 66, 0.75);
+  position: absolute;
+  z-index: 10;
+  transition: 0.5s;
+}
+section.sns ul li a:hover .img-box::before {
+  width: 100%;
+}
+
+section.sns ul li .img-box::after {
+  content: 'BLOG';
+  font-size: 15px;
+  font-family: 'Exo 2', sans-serif;
+  border: 1px solid #fff;
+  border-radius: 40px;
+  color: #fff;
+  padding: 5px 30px;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  z-index: 500;
+  transform: translate(-50%, -50%);
+  opacity: 0;
+  transition: 0.7s;
+}
+section.sns ul li a:hover .img-box::after {
+  opacity: 1;
+}
+
+.sns .sub-container .bottom {
+  padding: 20px;
+}
+
+.sns .sub-container .bottom .color{
+  color: orange;
+  font-weight: 700;
+  margin-bottom: 10px;
+}
+
+.sns .sub-container .bottom p:nth-child(2) {
+  font-size: 16px;
+  margin-bottom: 30px;
+}
+
+.sns .sub-container .bottom .time {
+  color: gray;
+}
+
+.sns .sub-container .bottom .time i {
+  margin-right: 5px;
+}
+
+footer .inner {
+  float: left;
+  width: 100%;
+  border-top: 1px solid #000000;
+  margin-top: 50px;
+  padding: 40px 0px;
+}
+
+footer .inner .ft-logo {
+  /* border: 1px solid #000; */
+  float: left;
+  margin-left: 100px;
+  margin-right: 40px;
+}
+
+footer .inner .ft-logo img {
+  width: 80%;
+  height: 80%;
+}
+
+footer .inner .address {
+  float: left;
+  margin-top: 40px;
+  margin-right: 80px;
+  font-weight: 700;
+  font-size: 16px;
+}
+footer .inner .address .en {
+  margin-top: 10px;
+  font-weight: 500;
+  color: gray;
+}
+
+footer .inner .list li{
+  /* border: 1px solid #000; */
+  float: left;
+  margin-top: 50px;
+  margin-left: 80px;
+  font-size: 15px;
+}
+
+footer .inner .list li:last-child {
+  color: rgb(0, 0, 0);
+  font-weight: 700;
 }
