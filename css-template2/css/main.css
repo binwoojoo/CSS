@@ -80,6 +80,9 @@ header .gnb {
     flex-direction: row-reverse;
     transition: 0.6s;
 }
+header .gnb.on {
+    right: 0;
+}
 header .gnb .close {
     display: block;
     color: #fff;
